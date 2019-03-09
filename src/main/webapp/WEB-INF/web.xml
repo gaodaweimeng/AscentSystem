@@ -5,10 +5,10 @@
          version="3.1">
     <servlet>
         <servlet-name>Servlet</servlet-name>
-        <servlet-class>BaseTest.Servlet</servlet-class>
+        <servlet-class>Servlet.TestServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>Servlet</servlet-name>
-        <url-pattern>/Servlet.do</url-pattern>
+        <url-pattern>/test_servlet.do</url-pattern>
     </servlet-mapping>
 </web-app>

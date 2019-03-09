@@ -10,7 +10,8 @@ import java.sql.SQLException;
 
 public class LoginDAO {
     public Usr logIn(String user, String password){
-        Connection con = DataAccess.getConnection();
+        DataAccess access = new DataAccess();
+        Connection con = access.getConnection();
         String sql = "select * from usr where username=?and password=?";
         PreparedStatement pst = null;
         ResultSet rs = null;
