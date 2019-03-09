@@ -1,10 +1,10 @@
-package BaseTest;
+package Servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 
 @javax.servlet.annotation.WebServlet(name = "Servlet")
-public class Servlet extends javax.servlet.http.HttpServlet {
+public class TestServlet extends javax.servlet.http.HttpServlet {
     // Post与Get的具体区别
     protected void doPost(javax.servlet.http.HttpServletRequest request, javax.servlet.http.HttpServletResponse response) throws javax.servlet.ServletException, IOException {}
 
