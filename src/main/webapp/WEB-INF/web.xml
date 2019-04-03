@@ -4,11 +4,27 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
     <servlet>
-        <servlet-name>Servlet</servlet-name>
+        <servlet-name>TestServlet</servlet-name>
         <servlet-class>Servlet.TestServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>Servlet</servlet-name>
+        <servlet-name>TestServlet</servlet-name>
         <url-pattern>/test_servlet.do</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>DisServlet</servlet-name>
+        <servlet-class>Servlet.DisServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DisServlet</servlet-name>
+        <url-pattern>/dis_servlet.do</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>FindAllUsrServlet</servlet-name>
+        <servlet-class>Servlet.FindAllUsrServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FindAllUsrServlet</servlet-name>
+        <url-pattern>/findAllUsrServlet.do</url-pattern>
     </servlet-mapping>
 </web-app>

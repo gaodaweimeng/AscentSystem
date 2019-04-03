@@ -6,9 +6,6 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.Properties;
 
-/**
- * Created by Martin17 on 2017/3/16.
- */
 public class DataAccess {
     public Connection getConnection(){
 

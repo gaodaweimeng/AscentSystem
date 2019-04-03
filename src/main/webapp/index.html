@@ -12,11 +12,18 @@
             min-width: 100%;
             min-height: 100%;
         }
+
+        .login_form{
+            display:block;
+            border-radius: 5px;
+            background-color: #CCCCCC;
+            padding: 20px;
+        }
     </style>
 </head>
 <body>
 <div class="jumbotron text-center" style="margin-bottom:0">
-    <img src="images/head-blue.jpg" alt="head-image"/>
+    <img src="static/images/head-blue.jpg" alt="head-image"/>
 </div>
 
 <nav class="navbar navbar-inverse" >
@@ -46,7 +53,7 @@
     <div class="row">
         <div class="col-sm-4">
             <br/>
-            <img src="images/lxrycyy.gif" alt="left" width="295" height="200">
+            <img src="static/images/lxrycyy.gif" alt="left" width="295" height="200">
         </div>
         <div class="col-sm-5">
             <br/>
@@ -65,15 +72,12 @@
             <p><strong>Good luck with your new design!</strong></p>
         </div>
         <div class="col-sm-3">
-            <br/>
-            <label for="email" class="sr-only">邮箱</label>
-            <input type="email" id="email" class="form-control" placeholder="name@domain.com" required autofocus>
-            <br/>
-            <label for="inputPassword" class="sr-only">密码</label>
-            <input type="password" id="inputPassword" class="form-control" placeholder="密码" required>
-            <br/>
-            <button class="btn btn-lg btn-primary btn-block" type="submit">登录</button>
-            <br/>
+            <form  class="login_form" method="get" action="dis_servlet.do">
+                用户名<input type="text" name="username" placeholder="用户名"><br>
+                密码&nbsp;<input type="password" name="password" placeholder="密码"><br>
+                <button type="submit">登录</button>
+            </form>
+
             <ul class="nav nav-pills nav-stacked">
                 <li><p>最新商品列表</p></li>
                 <li><a href="#">西药</a></li>
