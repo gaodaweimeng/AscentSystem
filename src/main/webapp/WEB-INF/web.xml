@@ -11,6 +11,7 @@
         <servlet-name>TestServlet</servlet-name>
         <url-pattern>/test_servlet.do</url-pattern>
     </servlet-mapping>
+
     <servlet>
         <servlet-name>DisServlet</servlet-name>
         <servlet-class>Servlet.DisServlet</servlet-class>
@@ -19,6 +20,7 @@
         <servlet-name>DisServlet</servlet-name>
         <url-pattern>/dis_servlet.do</url-pattern>
     </servlet-mapping>
+
     <servlet>
         <servlet-name>FindAllUsrServlet</servlet-name>
         <servlet-class>Servlet.FindAllUsrServlet</servlet-class>
@@ -26,5 +28,32 @@
     <servlet-mapping>
         <servlet-name>FindAllUsrServlet</servlet-name>
         <url-pattern>/findAllUsrServlet.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>Servlet.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/loginServlet.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LoginUserInfoServlet</servlet-name>
+        <servlet-class>Servlet.LoginUserInfoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginUserInfoServlet</servlet-name>
+        <url-pattern>/loginUserInfoServlet.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>Servlet.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/logoutServlet.do</url-pattern>
     </servlet-mapping>
 </web-app>

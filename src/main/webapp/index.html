@@ -72,9 +72,13 @@
             <p><strong>Good luck with your new design!</strong></p>
         </div>
         <div class="col-sm-3">
-            <form  class="login_form" method="get" action="dis_servlet.do">
-                用户名<input type="text" name="username" placeholder="用户名"><br>
-                密码&nbsp;<input type="password" name="password" placeholder="密码"><br>
+            <form  class="login_form" method="post" action="/loginServlet.do">
+                用户名<label>
+                <input type="text" name="username" placeholder="用户名">
+            </label><br>
+                密码&nbsp;<label>
+                <input type="password" name="password" placeholder="密码">
+            </label><br>
                 <button type="submit">登录</button>
             </form>
 
