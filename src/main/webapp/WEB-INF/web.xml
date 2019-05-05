@@ -56,4 +56,13 @@
         <servlet-name>LogoutServlet</servlet-name>
         <url-pattern>/logoutServlet.do</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>FindAllProductServlet</servlet-name>
+        <servlet-class>Servlet.FindAllProductServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FindAllProductServlet</servlet-name>
+        <url-pattern>/findAllProductServlet.do</url-pattern>
+    </servlet-mapping>
 </web-app>

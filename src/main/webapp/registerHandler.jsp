@@ -23,14 +23,13 @@
     <%
         RegisterDao registerDao = new RegisterDao();
         registerDao.register(user);
-        if(registerDao.register(user) == 1){
+        if(registerDao.register(user) == 0){
             out.println("用户注册成功，用户信息已经保存在会话session中。<br>下面显示信息取自内置对象session:<br>");
             Usr p = (Usr)session.getAttribute("user");
-            out.println("该用户名或者邮箱已经被注册！");
             out.println("用户名: " + p.getUsername() + "Email: " + p.getEmail());
 
         }else {
-            out.println("用户注册失败，请重新注册！");
+            out.println("该用户名或者邮箱已经被注册！");
         }
     %>
 </body>

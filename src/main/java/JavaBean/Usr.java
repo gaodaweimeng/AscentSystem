@@ -143,21 +143,15 @@ public class Usr implements java.io.Serializable{
         return zip;
     }
 
-    public void setZip(String zip) {
-        this.zip = zip;
-    }
+    public void setZip(String zip) { this.zip = zip; }
 
-    public String getSuperuser() {
-        return superuser;
-    }
+    public String getSuperuser() { return superuser; }
 
     public void setSuperuser(String superuser) {
         this.superuser = superuser;
     }
 
-    public String getDelsoft() {
-        return delsoft;
-    }
+    public String getDelsoft() { return delsoft; }
 
     public void setDelsoft(String delsoft) {
         this.delsoft = delsoft;
